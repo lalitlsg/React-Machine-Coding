@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SingleStar from './SingleStar';
+import style from './star-rating.module.css';
 
 const StarRating = () => {
   const stars = new Array(5).fill(0);
@@ -14,13 +15,13 @@ const StarRating = () => {
   };
 
   return (
-    <div className='star-container'>
+    <div className={style.starContainer}>
       <div>
         {stars.map((s, i) => (
           <SingleStar index={i} mouseOverHandler={mouseOverHandler} onStarClick={onStarClick} fill={i <= currIndex} />
         ))}
       </div>
-      {ratings && <div className="ratings">{ratings}</div>}
+      {ratings && <div className={style.ratings}>{ratings}</div>}
     </div>
   );
 };

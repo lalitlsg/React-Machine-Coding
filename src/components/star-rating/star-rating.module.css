@@ -1,0 +1,21 @@
+.singleStar {
+  padding: 10px;
+}
+
+.singleStar:hover {
+  cursor: pointer;
+}
+
+.singleStar path {
+  stroke: black;
+}
+
+.ratings {
+  font-weight: 700;
+  display: inline;
+}
+
+.starContainer {
+  display: flex;
+  align-items: center;
+}

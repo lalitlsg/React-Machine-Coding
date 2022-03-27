@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './star-rating.module.css';
 
 const SingleStar = ({ mouseOverHandler, onStarClick, index, fill }) => {
   return (
@@ -6,7 +7,7 @@ const SingleStar = ({ mouseOverHandler, onStarClick, index, fill }) => {
       width="41"
       height="38"
       viewBox="0 0 41 38"
-      className="single-star"
+      className={style.singleStar}
       onMouseOver={() => mouseOverHandler(index)}
       onMouseOut={() => mouseOverHandler(-1)}
       onClick={onStarClick}

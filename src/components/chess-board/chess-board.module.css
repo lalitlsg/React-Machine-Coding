@@ -1,0 +1,32 @@
+.chessContainer {
+  border-top: 1px solid #bfbfbf;
+  border-left: 1px solid #bfbfbf;
+  display: grid;
+  grid-template-columns: repeat(8, 30px);
+  grid-template-rows: repeat(8, 30px);
+  justify-content: center;
+  align-content: center;
+  border: 1px solid black;
+  width: 242px;
+  margin: 20px auto;
+}
+
+.main {
+  border: 1px solid black;
+}
+
+.black {
+  background-color: black;
+}
+
+.white {
+  background-color: white;
+}
+
+.red {
+    background-color: red;
+}
+
+.chessContainer section {
+    cursor: pointer;
+}

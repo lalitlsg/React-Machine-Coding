@@ -18,7 +18,13 @@ const StarRating = () => {
     <div className={style.starContainer}>
       <div>
         {stars.map((s, i) => (
-          <SingleStar index={i} mouseOverHandler={mouseOverHandler} onStarClick={onStarClick} fill={i <= currIndex} />
+          <SingleStar
+            key={i}
+            index={i}
+            mouseOverHandler={mouseOverHandler}
+            onStarClick={onStarClick}
+            fill={i <= currIndex}
+          />
         ))}
       </div>
       {ratings && <div className={style.ratings}>{ratings}</div>}

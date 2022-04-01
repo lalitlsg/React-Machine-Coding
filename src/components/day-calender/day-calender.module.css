@@ -1,0 +1,54 @@
+:root {
+  --height-of-one-hour: 70px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.days {
+  max-height: 600px;
+  width: 80%;
+  border: 1px solid rgb(236, 227, 227);
+  overflow: scroll;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.hour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--height-of-one-hour);
+}
+
+.horizontalBar {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(236, 227, 227);;
+  display: inline-block;
+}
+
+.meetings {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 90%;
+}
+
+.meeting {
+  position: absolute;
+  width: 99%;
+  border-radius: 5px;
+  color: white;
+  padding: 00.5rem;
+  border: 1px solid white;
+}
+
+.meetingContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

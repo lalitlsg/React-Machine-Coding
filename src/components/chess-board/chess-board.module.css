@@ -1,6 +1,4 @@
 .chessContainer {
-  border-top: 1px solid #bfbfbf;
-  border-left: 1px solid #bfbfbf;
   display: grid;
   grid-template-columns: repeat(8, 30px);
   grid-template-rows: repeat(8, 30px);

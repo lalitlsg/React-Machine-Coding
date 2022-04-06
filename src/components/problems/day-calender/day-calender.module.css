@@ -2,11 +2,21 @@
   --height-of-one-hour: 70px;
 }
 
+.mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
 .main {
   display: flex;
   justify-content: center;
   padding: 1rem;
-  border: 1px solid black;
+  width: 100%;
 }
 
 .days {

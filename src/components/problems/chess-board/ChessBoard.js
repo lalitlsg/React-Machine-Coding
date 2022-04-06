@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import constant from '../../constant/constant';
 import style from './chess-board.module.css';
 
 const arr = new Array(8);
@@ -68,17 +69,20 @@ const ChessBoard = () => {
   };
 
   return (
-    <div className={style.main}>
-      <div className={style.chessContainer}>
-        {matrix.map((b) => (
-          <section
-            key={'' + b.i + b.j + b.color}
-            onClick={() => onBoxClick(b.i, b.j)}
-            className={b.color === 'R' ? style.red : b.color === 'B' ? style.black : style.white}
-          ></section>
-        ))}
+    <section className={style.mainSection}>
+      <header className={style.header}>{constant.CHESS_BOARD_HEADER}</header>
+      <div className={style.main}>
+        <div className={style.chessContainer}>
+          {matrix.map((b) => (
+            <section
+              key={'' + b.i + b.j + b.color}
+              onClick={() => onBoxClick(b.i, b.j)}
+              className={b.color === 'R' ? style.red : b.color === 'B' ? style.black : style.white}
+            ></section>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -33,7 +33,7 @@ const getTimeSuffix = (time) => {
 const SingleMeet = ({ m, i }) => {
   return (
     <div
-      key={m.title + i}
+      key={i}
       className={style.meeting}
       style={{
         backgroundColor: `${m.color}`,

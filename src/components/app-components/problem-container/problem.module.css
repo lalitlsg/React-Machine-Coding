@@ -1,0 +1,9 @@
+.currentProblemContainer {
+  margin-top: 5rem;
+}
+
+.backButton {
+    margin-bottom: 2rem;
+    color: blue;
+    cursor: pointer;
+}

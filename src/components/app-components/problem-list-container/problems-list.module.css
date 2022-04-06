@@ -1,0 +1,9 @@
+.problem {
+  margin-bottom: 0.8rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.problemListContainer {
+  margin: 2rem 1rem 1rem 1rem;
+}

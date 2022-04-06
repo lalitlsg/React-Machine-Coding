@@ -1,4 +1,5 @@
 import React from 'react';
+import constant from '../../constant/constant';
 import { nonConflictingMettings, conflictingMeetings } from './data';
 import style from './day-calender.module.css';
 import SingleMeet from './SingleMeet';
@@ -56,14 +57,17 @@ const listOfMeetings = processedMeets.map((m, i) => {
 
 const DayCalender = () => {
   return (
-    <main className={style.main}>
-      <section className={style.days}>
-        {hours}
-        <section className={style.meetings}>
-          <div className={style.meetingContainer}>{listOfMeetings}</div>
+    <section className={style.mainSection}>
+      <header className={style.header}>{constant.DAY_CALENDER_HEADER}</header>
+      <main className={style.main}>
+        <section className={style.days}>
+          {hours}
+          <section className={style.meetings}>
+            <div className={style.meetingContainer}>{listOfMeetings}</div>
+          </section>
         </section>
-      </section>
-    </main>
+      </main>
+    </section>
   );
 };
 

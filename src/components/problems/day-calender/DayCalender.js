@@ -1,5 +1,5 @@
 import React from 'react';
-import constant from '../../constant/constant';
+import { MACHINE_CODING_HEADERS } from '../../../constant/constant';
 import { nonConflictingMettings, conflictingMeetings } from './data';
 import style from './day-calender.module.css';
 import SingleMeet from './SingleMeet';
@@ -52,13 +52,13 @@ const processConflictingMeetings = (meetings) => {
 const processedMeets = processConflictingMeetings(conflictingMeetings);
 
 const listOfMeetings = processedMeets.map((m, i) => {
-  return <SingleMeet m={m} i={i} />;
+  return <SingleMeet m={m} i={i} key={m.uid}/>;
 });
 
 const DayCalender = () => {
   return (
     <section className={style.mainSection}>
-      <header className={style.header}>{constant.DAY_CALENDER_HEADER}</header>
+      <header className={style.header}>{MACHINE_CODING_HEADERS.DAY_CALENDER_HEADER}</header>
       <main className={style.main}>
         <section className={style.days}>
           {hours}

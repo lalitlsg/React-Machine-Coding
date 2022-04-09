@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import constant from '../../constant/constant';
+import { MACHINE_CODING_HEADERS } from '../../../constant/constant';
 import SingleStar from './SingleStar';
 import style from './star-rating.module.css';
 
@@ -17,7 +17,7 @@ const StarRating = () => {
 
   return (
     <section className={style.main}>
-      <header className={style.header}>{constant.STAR_RATING_HEADER}</header>
+      <header className={style.header}>{MACHINE_CODING_HEADERS.STAR_RATING_HEADER}</header>
       <div className={style.starContainer}>
         <div>
           {stars.map((s, i) => (

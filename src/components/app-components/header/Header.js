@@ -1,8 +1,9 @@
 import React from 'react'
+import style from './header.module.css'
 
-const Header = () => {
+const Header = ({text}) => {
   return (
-    <h2>Machine Coding Problems</h2>
+    <h3 className={style.header}>{text}</h3>
   )
 }
 

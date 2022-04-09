@@ -37,77 +37,89 @@ export const nonConflictingMettings = [
   },
 ];
 
-export const conflictingMeetings = [
+export const conflictingMeetings = [  
   {
     startTime: '00:00',
     endTime: '01:30',
     color: '#f6be23',
     title: '#TeamDevkode',
+    uid: '1',
   },
   {
     startTime: '3:30',
     endTime: '7:30',
     color: '#f6501e',
     title: '#TeamDevkode',
+    uid: '2',
   },
   {
     startTime: '4:30',
     endTime: '8:30',
     color: '#f6501e',
     title: '#TeamDevkode',
+    uid: '3',
   },
   {
     startTime: '6:30',
     endTime: '9:00',
     color: '#f6501e',
     title: 'Demo',
+    uid: '4',
   },
   {
     startTime: '11:00',
     endTime: '13:30',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '5',
   },
   {
     startTime: '12:00',
     endTime: '13:30',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '6',
   },
   {
     startTime: '9:30',
     endTime: '10:30',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '7',
   },
   {
     startTime: '16:00',
     endTime: '17:00',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '8',
   },
   {
     startTime: '15:00',
     endTime: '17:00',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '9',
   },
   {
     startTime: '18:00',
     endTime: '19:00',
     color: '#f6501e',
     title: '#TeamDevkode',
+    uid: '10',
   },
   {
     startTime: '20:30',
     endTime: '22:30',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '11',
   },
   {
     startTime: '20:30',
     endTime: '22:30',
     color: '#029be5',
     title: '#TeamDevkode',
+    uid: '12',
   },
 ];

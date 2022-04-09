@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import constant from '../../constant/constant';
+import {MACHINE_CODING_HEADERS} from '../../../constant/constant';
 import style from './chess-board.module.css';
 
 const arr = new Array(8);
@@ -70,7 +70,7 @@ const ChessBoard = () => {
 
   return (
     <section className={style.mainSection}>
-      <header className={style.header}>{constant.CHESS_BOARD_HEADER}</header>
+      <header className={style.header}>{MACHINE_CODING_HEADERS.CHESS_BOARD_HEADER}</header>
       <div className={style.main}>
         <div className={style.chessContainer}>
           {matrix.map((b) => (

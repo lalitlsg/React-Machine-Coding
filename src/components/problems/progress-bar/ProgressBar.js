@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import constant from '../../constant/constant';
+import { MACHINE_CODING_HEADERS } from '../../../constant/constant';
 import style from './progress-bar.module.css';
 
 const ProgressBar = () => {
@@ -12,7 +12,7 @@ const ProgressBar = () => {
 
   return (
     <section className={style.mainSection}>
-      <header className={style.header}>{constant.PROGRESS_BAR_HEADER}</header>
+      <header className={style.header}>{MACHINE_CODING_HEADERS.PROGRESS_BAR_HEADER}</header>
 
       <div className={style.main}>
         <section className={style.area}>

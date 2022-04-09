@@ -1,25 +1,16 @@
 import React from 'react';
 import style from './problems-list.module.css';
-import constant from '../../constant/constant';
+import Header from '../header/Header';
 
-const listOfProblems = [
-    { linkName: 'Star Rating', componentName: 'star-rating', uid: constant.STAR_RATING },
-    { linkName: 'Chess Board', componentName: 'chess-board', uid: constant.CHESS_BOARD },
-    { linkName: 'Progress Bar', componentName: 'progress-bar', uid: constant.PROGRESS_BAR },
-    { linkName: 'Day Calender', componentName: 'day-calender', uid: constant.DAY_CALENDER },
-  ];
-  
-
-const renderListOfProblems = listOfProblems.map((p) => (
+const ProblemListContainer = ({ handleLinkNameClick, listOfProblems, headerText }) => {
+  const renderListOfProblems = listOfProblems.map((p) => (
     <li className={style.problem} key={p.uid} data-uid={p.uid}>
       {p.linkName}
     </li>
   ));
-  
-
-const ProblemListContainer = ({handleLinkNameClick}) => {
   return (
     <div className={style.main}>
+      <Header text={headerText} />
       <ol className={style.problemListContainer} onClick={handleLinkNameClick}>
         {renderListOfProblems}
       </ol>

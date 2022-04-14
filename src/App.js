@@ -8,6 +8,7 @@ import { problemComponents } from './components/problems';
 
 function App() {
   const [currentProblemComponent, setCurrentProblemComponent] = useState(null);
+
   const handleLinkNameClick = (e) => {
     if (e === null) {
       setCurrentProblemComponent(null);
@@ -16,23 +17,35 @@ function App() {
     }
   };
 
+  const problemContainer = (
+    <ProblemContainer currentProblemComponent={currentProblemComponent} handleLinkNameClick={handleLinkNameClick} />
+  );
+
+  const machineCodingProblemsList = (
+    <ProblemListContainer
+      handleLinkNameClick={handleLinkNameClick}
+      listOfProblems={machineCodingProblems}
+      headerText={'Machine Coding Problems'}
+    />
+  );
+
+  const customHooksProblemsList = (
+    <ProblemListContainer
+      handleLinkNameClick={handleLinkNameClick}
+      listOfProblems={customHooksProblems}
+      headerText={'Custom Hooks Problems'}
+    />
+  );
+
   return (
     <div className="main-container">
       {currentProblemComponent ? (
-        <ProblemContainer currentProblemComponent={currentProblemComponent} handleLinkNameClick={handleLinkNameClick} />
+        problemContainer
       ) : (
-        <div>
-          <ProblemListContainer
-            handleLinkNameClick={handleLinkNameClick}
-            listOfProblems={machineCodingProblems}
-            headerText={'Machine Coding Problems'}
-          />
-          <ProblemListContainer
-            handleLinkNameClick={handleLinkNameClick}
-            listOfProblems={customHooksProblems}
-            headerText={'Custom Hooks Problems'}
-          />
-        </div>
+        <>
+          {machineCodingProblemsList}
+          {customHooksProblemsList}
+        </>
       )}
     </div>
   );

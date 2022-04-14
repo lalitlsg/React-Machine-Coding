@@ -1,0 +1,62 @@
+.header {
+  margin-bottom: 2rem;
+}
+
+.scrollContainer {
+  height: 400px;
+  background: linear-gradient(to bottom, #4d4dff, #00004d);
+
+  position: relative;
+}
+
+.scrollInnerContainer {
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+
+.card {
+  display: inline-block;
+  background: white;
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  white-space: normal;
+}
+
+.description {
+  color: #8c8c8c;
+}
+
+.username {
+  margin-top: 10px;
+}
+
+.controls {
+  position: absolute;
+  left: 80%;
+  top: 10%;
+  display: flex;
+}
+
+.controls div {
+  margin-right: 10px;
+  background: white;
+  padding: 8px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.controls div:hover {
+  background: #d9d9d9;
+}

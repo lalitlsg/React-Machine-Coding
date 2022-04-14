@@ -1,0 +1,42 @@
+.formSection {
+  margin-top: 1.5rem;
+}
+
+.fieldContainer {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+
+.fieldContainer label {
+  flex: 0 0 150px;
+  padding: 10px;
+  text-align: left;
+}
+
+.fieldContainer input {
+  flex: 1;
+  padding: 10px;
+}
+
+.formOutput {
+  margin-top: 1.5rem;
+}
+
+.groupFields {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.groupFields .label {
+  flex: 0 0 150px;
+  padding: 10px;
+  text-align: left;
+}
+
+.groupFields .children {
+  flex: 1;
+  display: flex;
+}

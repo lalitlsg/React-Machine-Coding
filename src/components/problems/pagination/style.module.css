@@ -1,0 +1,43 @@
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.usersContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user {
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.paginationButtonsContainer {
+  margin-top: 100px;
+  display: flex;
+}
+
+.paginationButtonsContainer div {
+  /* padding: 5px 10px; */
+  border: 1px solid #eee;
+  margin: 5px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.paginationButtonsContainer div:hover {
+  border: 1px solid blue;
+}
+
+.selectedButton {
+  background-color: blue;
+  color: white;
+}

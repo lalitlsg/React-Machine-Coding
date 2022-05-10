@@ -1,0 +1,51 @@
+.main {
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.header,
+.tableOptions {
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  padding: 0.5rem;
+}
+
+.tableOptions select {
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.tableSection {
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+th,
+td {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+
+th {
+  border-top: 1px solid black;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 1px solid black;
+}

@@ -9,4 +9,7 @@ export const machineCodingProblems = [
   { linkName: 'Dynamic Form', componentName: 'dynamic-form', uid: UID.DYNAMIC_FORM },
   { linkName: 'Pagination', componentName: 'pagination', uid: UID.PAGINATION },
   { linkName: 'Horizontal Scroller', componentName: 'horizontal-scroller', uid: UID.HORIZONTAL_SCROLLER },
+  { linkName: 'Infinite Scroller', componentName: 'infinite-scroller', uid: UID.INFINITE_SCROLLER },
+  { linkName: 'Search Bar', componentName: 'search-bar', uid: UID.SEARCH_BAR },
+  { linkName: 'Dynamic Table', componentName: 'dynamic-table', uid: UID.DYNAMIC_TABLE },
 ];

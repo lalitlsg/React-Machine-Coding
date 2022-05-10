@@ -7,3 +7,16 @@
 .problemListContainer {
   margin: 2rem 1rem 1rem 1rem;
 }
+
+.subList {
+  margin: 1rem;
+}
+
+.hasSubList {
+  color: grey;
+  cursor: none;
+}
+
+.subProblem {
+  margin-bottom: 0.8rem;
+}

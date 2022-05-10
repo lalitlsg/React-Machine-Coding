@@ -1,0 +1,17 @@
+.section {
+  margin: 1rem;
+}
+
+.section button {
+  margin-right: 1rem;
+}
+
+.section article {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 1rem;
+}
+
+.section article div {
+  margin-bottom: 0.5rem;
+}

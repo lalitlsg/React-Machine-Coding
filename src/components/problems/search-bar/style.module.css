@@ -1,0 +1,23 @@
+.searchResults {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.searchBar {
+  width: 100%;
+}
+
+.searchItem {
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.searchItem:hover,
+.selectedSuggestion {
+  background-color: #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}

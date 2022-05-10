@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ProblemContainer from './components/app-components/problem-container/ProblemContainer';
 import { customHooksProblems } from './components/app-components/problem-list-container/custome-hooks-problems';
+import { hooksImplProblems } from './components/app-components/problem-list-container/hooks-impl-problems';
 import { machineCodingProblems } from './components/app-components/problem-list-container/machine-coding-problems';
 import ProblemListContainer from './components/app-components/problem-list-container/ProblemListContainer';
 import { problemComponents } from './components/problems';
@@ -37,6 +38,14 @@ function App() {
     />
   );
 
+  const hooksImplProblemsList = (
+    <ProblemListContainer
+      handleLinkNameClick={handleLinkNameClick}
+      listOfProblems={hooksImplProblems}
+      headerText={'Hooks Implementation Problems'}
+    />
+  );
+
   return (
     <div className="main-container">
       {currentProblemComponent ? (
@@ -45,6 +54,7 @@ function App() {
         <>
           {machineCodingProblemsList}
           {customHooksProblemsList}
+          {hooksImplProblemsList}
         </>
       )}
     </div>

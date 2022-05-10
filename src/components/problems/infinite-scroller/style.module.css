@@ -1,0 +1,22 @@
+.scrollSection {
+  border: 1px solid #ccc;
+  width: min-content;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 5px;
+  overflow-y: auto;
+  height: 450px;
+  width: 350px;
+}
+.userCard {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 100px;
+}
+
+.userId {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
